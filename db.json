@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "personName": "Gabriel",
+      "gender": "homem cis"
+    }
+  ],
+  "dogs": [
+    {
+      "id": 1,
+      "name": "Marley",
+      "breed": "Labrador",
+      "gender": "masculino",
+      "vaccines": [
+        {
+          "id": 1,
+          "name": 1,
+          "type": "Raiva",
+          "status": false
+        }
+      ]
+    }
+  ]
+}
