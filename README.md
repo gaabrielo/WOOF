@@ -18,4 +18,4 @@ $ yarn server
 # Start the project
 $ yarn start
 ```
-Now access localhost:3000 from your browser.
+Now access [localhost:3000](http://localhost:3000) from your browser.
