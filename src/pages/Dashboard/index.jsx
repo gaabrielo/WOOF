@@ -4,10 +4,24 @@ import { VaccineTable } from '../../components/VaccineTable';
 import { NewVaccineForm } from '../../components/NewVaccineForm';
 import { Profile } from '../../components/Profile';
 import { NewDogForm } from '../../components/NewDogForm';
+import { useAuth } from '../../hooks/useAuth';
+import { Link } from 'react-router-dom';
+import { HiArrowLeft } from 'react-icons/hi';
 
-import { Container } from './styles.js';
+import { Container, Redirect } from './styles.js';
 
 export function Dashboard() {
+  const { user } = useAuth();
+
+  if (!user)
+    return (
+      <Redirect>
+        <Link to="/">
+          <HiArrowLeft />
+          Faça login
+        </Link>
+      </Redirect>
+    );
   return (
     <Container>
       <div>

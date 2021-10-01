@@ -8,7 +8,7 @@ import { Container, Form } from './styles';
 import { FormControl } from '../../styles/form';
 
 let newProductSchema = yup.object().shape({
-  personName: yup.string().required('Título obrigatório'),
+  name: yup.string().required('Título obrigatório'),
   gender: yup.string().required('Gênero obrigatório'),
 });
 
@@ -31,19 +31,20 @@ export function CreatePersonForm() {
     e.preventDefault();
 
     let formData = {
-      personName: personForm.name.trim(),
+      name: personForm.name.trim(),
       gender: personForm.gender.trim(),
     };
 
     const isFormValid = await newProductSchema.isValid(formData);
-    // console.log(isFormValid);
     if (!isFormValid) return;
 
     try {
-      await api.post('/users', JSON.stringify(formData)).then((res) => {
-        handleUserSession(res.data.id);
-        history.push('/dashboard');
-      });
+      await api
+        .post('/users', JSON.stringify(formData))
+        .then((res) => {
+          handleUserSession(res.data.id);
+        })
+        .then(history.push('/dashboard'));
     } catch (e) {
       console.log(e);
     }

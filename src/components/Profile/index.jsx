@@ -17,9 +17,10 @@ export function Profile() {
       try {
         async function getPersonData() {
           const response = await api.get(`/users/${user}`);
+          console.log(response);
 
           const newUserData = {
-            name: response.data.personName,
+            name: response.data.name,
             gender: response.data.gender,
           };
 

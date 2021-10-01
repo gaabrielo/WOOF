@@ -1,25 +1,53 @@
 {
   "users": [
     {
-      "id": 1,
-      "personName": "Gabriel",
-      "gender": "homem cis"
+      "name": "Gabriel Mendonça",
+      "gender": "homem cis",
+      "id": 1
     }
   ],
   "dogs": [
     {
-      "id": 1,
+      "owner_id": 1,
       "name": "Marley",
       "breed": "Labrador",
-      "gender": "masculino",
+      "gender": "macho",
       "vaccines": [
         {
-          "id": 1,
-          "name": 1,
-          "type": "Raiva",
-          "status": false
+          "name": "Biovet Vermivet",
+          "type": "Vermífugo",
+          "status": false,
+          "id": "ed73962a-a893-469b-9775-d3fc5496ad70"
+        },
+        {
+          "name": "Floxiclin",
+          "type": "Gripe",
+          "status": true,
+          "id": "ec52719d-196e-4158-9ff5-38233e6ccf85"
         }
-      ]
+      ],
+      "id": 1
+    },
+    {
+      "owner_id": 1,
+      "name": "Juca",
+      "breed": "Salsicha",
+      "gender": "macho",
+      "vaccines": [
+        {
+          "name": "Labyderm",
+          "type": "Raiva",
+          "status": true,
+          "id": "4bb7a947-ba1f-4efd-be8c-6d0379792111"
+        },
+        {
+          "name": "Biovet Vermivet",
+          "type": "Vermífugo",
+          "status": true,
+          "id": "2e74fd1f-a34d-4652-8c63-0361c4057a2d"
+        }
+      ],
+      "id": 2
     }
   ]
 }
