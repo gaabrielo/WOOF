@@ -1,3 +1,7 @@
+<h1 align="center">
+    <img alt="move.it" title="move.it" src="https://user-images.githubusercontent.com/71290629/135563457-6d52f8c8-d6ac-4698-b793-4259fe1ccfec.png" />
+</h1>
+
 ## 🚀 How to run
 
 Clone the repository and access the created folder.
