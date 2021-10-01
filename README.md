@@ -12,10 +12,10 @@ Now replicate the following steps to start the project:
 # Install dependencies
 $ yarn
 
-# Start the project
-$ yarn start
-
 # Start the server
 $ yarn server
+
+# Start the project
+$ yarn start
 ```
 Now access localhost:3000 from your browser.
